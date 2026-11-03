@@ -1,0 +1,15 @@
+[project]
+name = "mmx"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "openai>=3.42.1",
+    "python-dotenv>=1.2.4",
+]
+
+# 阿里云镜像同步滞后（最高只有 openai 3.42.0），这里补一个 pypi.org 作为兜底源，
+# 缺包时 uv 会自动回落到它，uv.lock 里的 source 也与它保持一致。
+# 注意：环境变量 UV_DEFAULT_INDEX 的优先级高于本文件配置。
+[[tool.uv.index]]
+name = "pypi"
+url = "https://pypi.org/simple"
