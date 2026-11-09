@@ -1,4 +1,4 @@
-# mmx — AMD 开发者门户接口实验台
+# AMD 开发者门户接口实验台
 
 基于 **AMD 开发者门户（Radeon API，OpenAI 兼容）** 的一组独立 Python 入口：命令行对话、Web 聊天界面、工具调用 Agent、语音合成连通性测试。
 
